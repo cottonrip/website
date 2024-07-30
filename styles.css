@@ -5,8 +5,19 @@ html, body {
 }
 
 body {
-    background-image: url('images/bg.png');
-    background-size: cover;     /* Make the image cover the whole screen */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Prevent the image from repeating */
-}
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top right, #0d0d0d, #ff00ff),
+                radial-gradient(at bottom left, #00ffff, transparent 40%),
+                radial-gradient(at bottom right, #9400d3, transparent 50%);
+    background-blend-mode: screen;
+  }
+  
+  .container {
+    width: 100%;
+    height: 100%;
+  }
