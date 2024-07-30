@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 html, body {
     height: 100%;
     margin: 0;
@@ -21,3 +22,17 @@ body {
     width: 100%;
     height: 100%;
   }
+=======
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('images/bg.png');
+    background-size: cover;     /* Make the image cover the whole screen */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+}
+>>>>>>> bc8a24e3db5c369625bd61d306fce6a994ee01d7
