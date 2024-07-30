@@ -15,15 +15,13 @@ body {
 }
 
 .title {
+  font-family: "Dela Gothic One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #ffffff;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-}
-
-.dela-gothic-one-regular {
-  font-family: "Dela Gothic One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
 }
