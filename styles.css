@@ -8,7 +8,7 @@ body, html {
 body {
   background: radial-gradient(at bottom left, #ffae00, transparent 50%),
               radial-gradient(at bottom right, #ff8dd9, transparent 50%),
-              radial-gradient(at bottom center, #8d214e, transparent 50%),
+              radial-gradient(at bottom center, #8d214e, transparent 80%),
               linear-gradient(to top, #100c09, #100c09 30%, transparent 70%);
   background-size: cover;
   background-color: #100c09; /* Ensure the background is black */
