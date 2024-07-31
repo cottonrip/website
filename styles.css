@@ -2,7 +2,7 @@ body, html {
   margin: 0;
   padding: 0;
   height: 100%;
-  width: 100%;
+  overflow: hidden;
 }
 
 body {
@@ -12,6 +12,32 @@ body {
               linear-gradient(to top, #121212, #121212 30%, transparent 70%);
   background-size: cover;
   background-color: #121212; /* Ensure the background is black */
+}
+
+.scroll-container {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+.snap-zone {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+  font-size: 2rem;
+  background-color: lightblue;
+  border-bottom: 1px solid #ccc;
+}
+
+.snap-zone:nth-child(2) {
+  background-color: lightgreen;
+}
+
+.snap-zone:nth-child(3) {
+  background-color: lightcoral;
 }
 
 .title {
