@@ -2,9 +2,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const scrollContainer = document.querySelector('.scroll-container');
     const snapZones = document.querySelectorAll('.snap-zone');
     const snapHeight = window.innerHeight;
-    
-    let startY;
     let currentScrollTop = 0;
+
+    const snapToZone = (index) => {
+        currentScrollTop = index * snapHeight;
+        scrollContainer.scrollTo({
+            top: currentScrollTop,
+            behavior: 'smooth'
+        });
+    };
 
     scrollContainer.addEventListener('touchstart', (e) => {
         startY = e.touches[0].pageY;
@@ -24,12 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Limit snapIndex to the number of snap zones
         snapIndex = Math.min(snapZones.length - 1, Math.max(0, snapIndex));
 
-        currentScrollTop = snapIndex * snapHeight;
-
-        scrollContainer.scrollTo({
-            top: currentScrollTop,
-            behavior: 'smooth'
-        });
+        snapToZone(snapIndex);
     });
 
     scrollContainer.addEventListener('wheel', (e) => {
@@ -43,11 +44,6 @@ document.addEventListener('DOMContentLoaded', () => {
             snapIndex = Math.max(0, snapIndex - 1);
         }
 
-        currentScrollTop = snapIndex * snapHeight;
-
-        scrollContainer.scrollTo({
-            top: currentScrollTop,
-            behavior: 'smooth'
-        });
+        snapToZone(snapIndex);
     });
 });
