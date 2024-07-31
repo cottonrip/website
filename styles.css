@@ -53,8 +53,9 @@ body, html {
 }
 
 .nice-lil-arrow-please-give-me-your-money {
-  position: relative;
-  bottom: 0;
+  position: fixed; /* Fixes the position relative to the viewport */
+  bottom: 10px; /* Adjust the distance from the bottom of the viewport */
   left: 50%;
   transform: translateX(-50%);
+  z-index: 1000;
 }
