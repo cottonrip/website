@@ -13,19 +13,18 @@ body, html {
   background-size: cover;
   background-color: #121212; /* Ensure the background is black */
 
-.scroll-container {
-  height: 100vh;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
+  .scroll-container {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
 }
 
 .snap-zone {
   height: 100vh;
+  width: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  scroll-snap-align: start;
   font-size: 2rem;
   background-color: lightblue;
   border-bottom: 1px solid #ccc;
