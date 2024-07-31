@@ -5,10 +5,16 @@ body, html {
   overflow: hidden;
 }
 
+a {
+  color: white;
+  text-decoration: none;
+  border-bottom: 4px dotted;
+}
+
 .scroll-container {
   height: 100vh;
-  overflow: hidden; /* Hide the scrollbar */
-  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
   position: relative;
 }
 
@@ -49,13 +55,16 @@ body, html {
 
 .copyright {
   font-size: 80;
+}
+
+.grey {
   color: #7a7a7a;
 }
 
-.nice-lil-arrow-please-give-me-your-money {
-  position: fixed; /* Fixes the position relative to the viewport */
-  bottom: 10px; /* Adjust the distance from the bottom of the viewport */
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1000;
+.center {
+  text-align: center;
+}
+
+.lines {
+  line-height: 1.5;
 }
