@@ -1,8 +1,18 @@
 document.addEventListener('DOMContentLoaded', () => {
     const scrollContainer = document.querySelector('.scroll-container');
     const snapZones = document.querySelectorAll('.snap-zone');
-    const snapHeight = window.innerHeight;
+    let snapHeight = window.innerHeight;
     let currentScrollTop = 0;
+
+    const updateSnapHeight = () => {
+        snapHeight = window.innerHeight;
+        snapZones.forEach(zone => {
+            zone.style.height = `${snapHeight}px`;
+        });
+        // Snap to the nearest zone after resizing
+        let snapIndex = Math.round(currentScrollTop / snapHeight);
+        snapToZone(snapIndex);
+    };
 
     const snapToZone = (index) => {
         currentScrollTop = index * snapHeight;
@@ -11,6 +21,8 @@ document.addEventListener('DOMContentLoaded', () => {
             behavior: 'smooth'
         });
     };
+
+    window.addEventListener('resize', updateSnapHeight);
 
     scrollContainer.addEventListener('touchstart', (e) => {
         startY = e.touches[0].pageY;
@@ -46,4 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         snapToZone(snapIndex);
     });
+
+    // Initial setup
+    updateSnapHeight();
 });
