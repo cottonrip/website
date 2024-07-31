@@ -2,23 +2,52 @@ document.addEventListener('DOMContentLoaded', () => {
     const scrollContainer = document.querySelector('.scroll-container');
     const snapZones = document.querySelectorAll('.snap-zone');
     const snapHeight = window.innerHeight;
+    
+    let startY;
+    let currentScrollTop = 0;
 
-    let isScrolling;
+    scrollContainer.addEventListener('touchstart', (e) => {
+        startY = e.touches[0].pageY;
+    });
 
-    scrollContainer.addEventListener('scroll', () => {
-        window.clearTimeout(isScrolling);
+    scrollContainer.addEventListener('touchmove', (e) => {
+        let touchY = e.touches[0].pageY;
+        let touchMove = startY - touchY;
 
-        isScrolling = setTimeout(() => {
-            let scrollPosition = scrollContainer.scrollTop;
-            let snapIndex = Math.round(scrollPosition / snapHeight);
+        scrollContainer.scrollTop = currentScrollTop + touchMove;
+    });
 
-            // Limit snapIndex to the number of snap zones
-            snapIndex = Math.min(snapZones.length - 1, Math.max(0, snapIndex));
+    scrollContainer.addEventListener('touchend', () => {
+        let scrollPosition = scrollContainer.scrollTop;
+        let snapIndex = Math.round(scrollPosition / snapHeight);
 
-            scrollContainer.scrollTo({
-                top: snapIndex * snapHeight,
-                behavior: 'smooth'
-            });
-        }, 66);
+        // Limit snapIndex to the number of snap zones
+        snapIndex = Math.min(snapZones.length - 1, Math.max(0, snapIndex));
+
+        currentScrollTop = snapIndex * snapHeight;
+
+        scrollContainer.scrollTo({
+            top: currentScrollTop,
+            behavior: 'smooth'
+        });
+    });
+
+    scrollContainer.addEventListener('wheel', (e) => {
+        e.preventDefault();
+        let scrollPosition = scrollContainer.scrollTop;
+        let snapIndex = Math.round(scrollPosition / snapHeight);
+
+        if (e.deltaY > 0) {
+            snapIndex = Math.min(snapZones.length - 1, snapIndex + 1);
+        } else {
+            snapIndex = Math.max(0, snapIndex - 1);
+        }
+
+        currentScrollTop = snapIndex * snapHeight;
+
+        scrollContainer.scrollTo({
+            top: currentScrollTop,
+            behavior: 'smooth'
+        });
     });
 });

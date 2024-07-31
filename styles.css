@@ -7,8 +7,9 @@ body, html {
 
 .scroll-container {
   height: 100vh;
-  overflow-y: scroll;
-  scroll-behavior: smooth;
+  overflow: hidden; /* Hide the scrollbar */
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+  position: relative;
 }
 
 .snap-zone {
