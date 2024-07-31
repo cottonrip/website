@@ -47,6 +47,7 @@ body, html {
   font-family: 'Cascadia Code', sans-serif;
 }
 
-.bt {
+.copyright {
   font-size: 80;
+  color: #7a7a7a;
 }
