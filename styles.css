@@ -37,9 +37,9 @@ body, html {
 }
 
 .snap-zone:nth-child(2) {
-  background-color: lightgreen;
+  background-color: #121212;
 }
 
 .snap-zone:nth-child(3) {
-  background-color: lightcoral;
+  background-color: #121212;
 }
