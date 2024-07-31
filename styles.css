@@ -53,5 +53,8 @@ body, html {
 }
 
 .nice-lil-arrow-please-give-me-your-money {
-  
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
