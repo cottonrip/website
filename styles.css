@@ -3,6 +3,10 @@ body, html {
   padding: 0;
   height: 100%;
   overflow: hidden;
+  user-select: none; /* For most modern browsers */
+  -webkit-user-select: none; /* For Safari */
+  -moz-user-select: none; /* For Firefox */
+  -ms-user-select: none; /* For Internet Explorer/Edge */
 }
 
 a {
@@ -45,10 +49,6 @@ a {
   background-color: #121212;
 }
 
-.snap-zone:nth-child(3) {
-  background-color: #121212;
-}
-
 .cascadia-code {
   font-family: 'Cascadia Code', sans-serif;
 }
@@ -67,4 +67,16 @@ a {
 
 .lines {
   line-height: 1.5;
+}
+
+.smaller-text {
+  font-size: 40px;
+}
+
+.smaller-lines {
+  line-height: 0.7;
+}
+
+.cursor-click-trick {
+  cursor: pointer;
 }

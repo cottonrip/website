@@ -62,3 +62,19 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initial setup
     updateSnapHeight();
 });
+
+function changeText() {
+    const originalText = "TikTok";
+    const newText = "it's trash";
+    const textElement = document.getElementById("myText");
+
+    textElement.innerHTML = newText;
+
+    setTimeout(function() {
+        textElement.innerHTML = originalText;
+    }, 1500);
+}
+
+document.addEventListener('contextmenu', function (e) {
+    e.preventDefault();
+});
