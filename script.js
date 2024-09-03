@@ -79,6 +79,22 @@ document.addEventListener('contextmenu', function (e) {
     e.preventDefault();
 });
 
+function changeTextDiscord() {
+    const originalText = "Discord";
+    const newText = "Discord: cotton.rip";
+    const textElement = document.getElementById("myTextDiscord");
+
+    textElement.innerHTML = newText;
+
+    setTimeout(function() {
+        textElement.innerHTML = originalText;
+    }, 1500);
+}
+
+document.addEventListener('contextmenu', function (e) {
+    e.preventDefault();
+});
+
 (function() {
     var userAgent = navigator.userAgent || navigator.vendor || window.opera;
     
