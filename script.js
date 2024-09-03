@@ -85,10 +85,6 @@ function changeTextDiscord() {
     const textElement = document.getElementById("myTextDiscord");
 
     textElement.innerHTML = newText;
-
-    setTimeout(function() {
-        textElement.innerHTML = originalText;
-    }, 1500);
 }
 
 document.addEventListener('contextmenu', function (e) {
