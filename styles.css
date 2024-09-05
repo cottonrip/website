@@ -80,3 +80,7 @@ a {
 .cursor-click-trick {
   cursor: pointer;
 }
+
+.smol-text{
+  text-size: 10px
+}
