@@ -90,16 +90,3 @@ function changeTextDiscord() {
 document.addEventListener('contextmenu', function (e) {
     e.preventDefault();
 });
-
-(function() {
-    var userAgent = navigator.userAgent || navigator.vendor || window.opera;
-    
-    // Detect iOS
-    if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-      window.location = "http://m.kitku.xyz";
-    }
-    // Detect Android
-    else if (/android/i.test(userAgent)) {
-      window.location = "http://m.kitku.xyz";
-    }
-  })();
