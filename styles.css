@@ -82,6 +82,6 @@ a {
 }
 
 .smol-text{
-  font-size: 10px
-  opacity: 50%
+  font-size: 10px;
+  opacity: 0.5;
 }
