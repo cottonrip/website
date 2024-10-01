@@ -49,6 +49,10 @@ a {
   background-color: #121212;
 }
 
+.snap-zone:nth-child(3) {
+  background-color: #121212;
+}
+
 .cascadia-code {
   font-family: 'Cascadia Code', sans-serif;
 }
@@ -88,4 +92,5 @@ a {
 
 .soon {
   font-family: 'Shrikhand', sans-serif;
+  color: #ffffff;
 }
