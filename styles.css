@@ -48,7 +48,7 @@ a {
   background-color: #121212;
   font-family: 'Shrikhand', sans-serif;
   color: #ffffff;
-  font-size: 90px;
+  font-size: 40px;
 }
 
 /* Combined styles for the third snap-zone */
@@ -57,7 +57,7 @@ a {
   color: #121212;
   font-family: 'Cascadia Code', sans-serif;
   line-height: 1.5;
-  font-size: 80px;
+  font-size: 40px;
 }
 
 .grey {
