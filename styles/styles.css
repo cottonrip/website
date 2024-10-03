@@ -75,16 +75,18 @@ a {
 }
 
 .dl {
+  display: inline-block;
   padding: 15px 30px;
-  font-size: 16px;
+  font-size: 30px;
   color: white;
-  background-color: #007BFF;
-  border: none;
-  border-radius: 50px; /* Max rounded corners */
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 50px;
+  text-decoration: none;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .dl:hover {
-  background-color: #0056b3; /* Darker shade on hover */
+  color: #ffd1df;
 }
