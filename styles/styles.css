@@ -73,3 +73,18 @@ a {
   font-size: 10px;
   opacity: 0.5;
 }
+
+.dl {
+  padding: 15px 30px;
+  font-size: 16px;
+  color: white;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 50px; /* Max rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dl:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
