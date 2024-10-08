@@ -94,10 +94,8 @@ a {
 .jm {
   font-family: 'Jetbrains Mono';
   font-size: 16px;
-  background: rgba(255, 255, 255, 0.28);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(6.6px);
-  -webkit-backdrop-filter: blur(6.6px);
-  border: 1px solid rgba(255, 255, 255, 1);
+    background-color: #000;
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    margin: 0 5px;
 }
