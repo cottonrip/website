@@ -4,6 +4,7 @@ body, html {
   height: 100%;
   overflow: hidden;
   user-select: none;
+  font-family: 'Jetbrains Mono';
 }
 
 a {
@@ -55,7 +56,6 @@ a {
 .snap-zone.copyright {
   background-color: #ffffff;
   color: #121212;
-  font-family: 'Cascadia Code', sans-serif;
   line-height: 1.5;
   font-size: 30px;
   background: radial-gradient(at bottom left, #ffd1df, transparent 79%);
