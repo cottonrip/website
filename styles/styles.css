@@ -47,9 +47,8 @@ a {
 /* Combined styles for the second snap-zone */
 .snap-zone.soon {
   background-color: #121212;
-  font-family: 'Shrikhand', sans-serif;
   color: #ffffff;
-  font-size: 50px;
+  font-size: 30px;
 }
 
 /* Combined styles for the third snap-zone */
@@ -99,5 +98,5 @@ a {
     padding: 10px 20px;
     margin: 0 5px;
     border-radius: 10px;
-    opacity: 40%;
+    opacity: 80%;
 }
