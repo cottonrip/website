@@ -45,7 +45,7 @@ a {
 }
 
 /* Combined styles for the second snap-zone */
-.snap-zone.soon {
+.snap-zone.tim {
   background-color: #121212;
   color: #ffffff;
   font-size: 30px;
@@ -105,7 +105,11 @@ a {
   color: white;
 }
 
-.bs {
+.btim {
   font-size: 40px;
   border-bottom: 0px dotted;
+}
+
+.stim {
+  font-size: 28px;
 }
