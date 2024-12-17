@@ -1,1 +1,1 @@
-im gonna update it in some time idk
+remind me to make a readme
