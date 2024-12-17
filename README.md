@@ -1,3 +1,1 @@
-website i made :3
-
-it's kinda broken idk
+im gonna update it in some time idk
