@@ -1,115 +1,110 @@
-body, html {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  overflow: hidden;
-  user-select: none;
-  font-family: 'Jetbrains Mono';
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200&display=swap');
+
+body {
+    scroll-behavior: smooth;
 }
 
-a {
-  color: #121212;
-  text-decoration: none;
-  border-bottom: 4px dotted;
+.rainbow-box-something-idk {
+    font-family: Righteous;
+    width: 223.667px;
+    height: 89px;
+    margin: 0 auto;
+    text-align: center;
 }
 
-.scroll-container {
-  height: 100vh;
-  overflow: hidden;
-  position: relative;
+.statuses {
+    font-family: JetBrains Mono, monospace;
+    margin-top: 20px;
 }
 
-.snap-zone {
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+.jb-mono {
+    font-family: JetBrains Mono, monospace;
 }
 
-.snap-zone.title {
-  background: radial-gradient(at bottom left, #ffae00, transparent 73%),
-              radial-gradient(at bottom right, #ff8dd9, transparent 62%),
-              radial-gradient(at bottom center, #8d214e, transparent 50%),
-              linear-gradient(to top, #121212, #121212 30%, transparent 70%);
-  background-color: #121212;
-  font-family: "Dela Gothic One", sans-serif;
-  color: #ffffff;
-  font-size: 90px;
-  line-height: 0.7;
+.box {
+    font-size: 18px;
+    display: inline-block;
+    background: rgba(94, 94, 94, 0.15);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(8.7px);
+    border: 3px solid rgba(255, 255, 255, 1);
+    margin-left: 5px;
+    margin-right: 5px;
+
 }
 
-.smaller-text {
-  font-size: 40px;
+.text-inside {
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
-/* Combined styles for the second snap-zone */
-.snap-zone.tim {
-  background-color: #121212;
-  color: #ffffff;
-  font-size: 30px;
+.div-with-divs {
+    margin: 20px;
+    justify-content: center;
+    align-items: top;
+    display: flex;
 }
 
-/* Combined styles for the third snap-zone */
-.snap-zone.copyright {
-  background-color: #ffffff;
-  color: #121212;
-  line-height: 1.5;
-  font-size: 30px;
-  background: radial-gradient(at bottom left, #ffd1df, transparent 79%);
+/* rainbow color changing stuff idfk */
+
+@keyframes rainbow-text {
+    0%   {color: #ff0000;}
+    12%  {color: #ffa500;}
+    24%  {color: #ffff00;}
+    36%  {color: #008000;}
+    48%  {color: #00ffff;}
+    60%  {color: #0000ff;}
+    72%  {color: #800080;}
+    84%  {color: #ffc0cb;}
+    100% {color: #ff0000;}
 }
 
-.grey {
-  color: #7a7a7a;
+.ranibow span{
+    pointer-events: all;
+    animation: rainbow-text 3s infinite;
+    display: table-cell;
+}
+.wave span:nth-child(1)  { animation-delay: -1600ms; }
+.wave span:nth-child(2)  { animation-delay: -1400ms; }
+.wave span:nth-child(3)  { animation-delay: -1200ms; }
+.wave span:nth-child(4)  { animation-delay: -1000ms; }
+.wave span:nth-child(5)  { animation-delay: -800ms;  }
+.wave span:nth-child(6)  { animation-delay: -600ms;  }
+
+/* click to enter */
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    cursor: pointer;
+    transition: opacity 0.5s ease;
 }
 
-.cursor-click-trick {
-  cursor: pointer;
+.overlay-text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    user-select: none;
 }
 
-.smol-text {
-  font-size: 10px;
-  opacity: 0.5;
-}
-
-.dl {
-  display: inline-block;
-  padding: 10px 20px;
-  font-size: 20px;
-  color: white;
-  background-color: transparent;
-  border: 4px solid white;
-  border-radius: 50px;
-  text-decoration: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.dl:hover {
-  color: #ffd1df;
-}
-
-.jm {
-  font-family: 'Jetbrains Mono';
-  font-size: 16px;
-    background-color: #000;
-    border: 2px solid #fff;
-    padding: 10px 20px;
-    margin: 0 5px;
-    border-radius: 10px;
-    opacity: 80%;
-}
-
-.w {
-  color: white;
-}
-
-.btim {
-  font-size: 40px;
-  border-bottom: 0px dotted;
-}
-
-.stim {
-  font-size: 28px;
-}
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  } 

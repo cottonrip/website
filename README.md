@@ -1,3 +1,1 @@
-website i made :3
-
-it's kinda broken idk
+remind me to make a readme for this
