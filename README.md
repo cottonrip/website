@@ -10,9 +10,11 @@ Just run `pnpm run dev` to test when editing, and `pnpm dev build` when u want t
 
 ## Credits
 
-[cool moving bg](https://codepen.io/kootoopas/pen/kGPoaB) - [kootoopas](https://x.com/kootoopas)
+[cool moving bg](https://codepen.io/kootoopas/pen/kGPoaB) - [@kootoopas](https://x.com/kootoopas)
 
 [coolio title with trail](https://codepen.io/mtsgeneroso/pen/mdJRpxX) - [Mateus Generoso](https://linkedin.com/in/mateusgeneroso)
+
+[entire 404 website lol](https://codepen.io/cbanlawi/pen/xxRBeMY) - idk who
 
 ## idk
 
