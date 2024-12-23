@@ -1,4 +1,4 @@
-import '/styles/anims.scss'
+import '../styles/anims.scss'
 
 document.addEventListener('contextmenu', function (e) {
     e.preventDefault();

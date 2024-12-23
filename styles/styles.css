@@ -8,6 +8,25 @@ body {
     scroll-behavior: smooth;
 }
 
+#snow {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    pointer-events:none;
+    z-index:1000
+}
+
+.snowflake {
+    position:fixed;
+    width:5px;
+    height:5px;
+    background:#fff;
+    border-radius:50%;
+    pointer-events:none
+}
+
 .rainbow-box-something-idk {
     font-family: Righteous;
     width: 223.667px;
@@ -45,7 +64,6 @@ body {
 }
 
 .div-with-divs {
-    flex-direction: column;
     margin: 20px;
     justify-content: center;
     align-items: top;
