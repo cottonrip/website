@@ -1,30 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200&display=swap");
 
 body {
     scroll-behavior: smooth;
 }
 
 #snow {
-    position:fixed;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    pointer-events:none;
-    z-index:1000
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: 1000;
 }
 
 .snowflake {
-    position:fixed;
-    width:5px;
-    height:5px;
-    background:#fff;
-    border-radius:50%;
-    pointer-events:none
+    position: fixed;
+    width: 5px;
+    height: 5px;
+    background: #fff;
+    border-radius: 50%;
+    pointer-events: none;
 }
 
 .rainbow-box-something-idk {
@@ -36,12 +36,16 @@ body {
 }
 
 .statuses {
-    font-family: JetBrains Mono, monospace;
+    font-family:
+        JetBrains Mono,
+        monospace;
     margin-top: 20px;
 }
 
 .jb-mono {
-    font-family: JetBrains Mono, monospace;
+    font-family:
+        JetBrains Mono,
+        monospace;
 }
 
 .box {
@@ -55,7 +59,6 @@ body {
     border: 3px solid rgba(255, 255, 255, 1);
     margin-left: 5px;
     margin-right: 5px;
-
 }
 
 .text-inside {
@@ -73,28 +76,58 @@ body {
 /* rainbow color changing stuff idfk */
 
 @keyframes rainbow-text {
-    0%   {color: #ff0000;}
-    12%  {color: #ffa500;}
-    24%  {color: #ffff00;}
-    36%  {color: #008000;}
-    48%  {color: #00ffff;}
-    60%  {color: #0000ff;}
-    72%  {color: #800080;}
-    84%  {color: #ffc0cb;}
-    100% {color: #ff0000;}
+    0% {
+        color: #ff0000;
+    }
+    12% {
+        color: #ffa500;
+    }
+    24% {
+        color: #ffff00;
+    }
+    36% {
+        color: #008000;
+    }
+    48% {
+        color: #00ffff;
+    }
+    60% {
+        color: #0000ff;
+    }
+    72% {
+        color: #800080;
+    }
+    84% {
+        color: #ffc0cb;
+    }
+    100% {
+        color: #ff0000;
+    }
 }
 
-.ranibow span{
+.ranibow span {
     pointer-events: all;
     animation: rainbow-text 3s infinite;
     display: table-cell;
 }
-.wave span:nth-child(1)  { animation-delay: -1600ms; }
-.wave span:nth-child(2)  { animation-delay: -1400ms; }
-.wave span:nth-child(3)  { animation-delay: -1200ms; }
-.wave span:nth-child(4)  { animation-delay: -1000ms; }
-.wave span:nth-child(5)  { animation-delay: -800ms;  }
-.wave span:nth-child(6)  { animation-delay: -600ms;  }
+.wave span:nth-child(1) {
+    animation-delay: -1600ms;
+}
+.wave span:nth-child(2) {
+    animation-delay: -1400ms;
+}
+.wave span:nth-child(3) {
+    animation-delay: -1200ms;
+}
+.wave span:nth-child(4) {
+    animation-delay: -1000ms;
+}
+.wave span:nth-child(5) {
+    animation-delay: -800ms;
+}
+.wave span:nth-child(6) {
+    animation-delay: -600ms;
+}
 
 /* click to enter */
 
@@ -115,7 +148,7 @@ body {
 }
 
 .overlay-text {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 500;
     color: white;
     font-size: 24px;
@@ -126,4 +159,4 @@ body {
 .fade-out {
     opacity: 0;
     transition: opacity 0.5s ease;
-  } 
+}
